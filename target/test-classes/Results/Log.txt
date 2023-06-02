@@ -1,0 +1,4 @@
+In login page
+In user name and password section
+On login button
+I am navigated to the login page wadrobe
