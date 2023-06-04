@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-05T01:11:52 IST" name="Default suite" finished-at="2023-06-05T01:16:12 IST" duration-ms="259378">
+  <suite started-at="2023-06-05T01:23:39 IST" name="Default suite" finished-at="2023-06-05T01:23:45 IST" duration-ms="5367">
     <groups>
     </groups>
-    <test started-at="2023-06-05T01:11:52 IST" name="Default test" finished-at="2023-06-05T01:16:12 IST" duration-ms="259378">
+    <test started-at="2023-06-05T01:23:39 IST" name="Default test" finished-at="2023-06-05T01:23:45 IST" duration-ms="5367">
       <class name="RESTAssured.PostReq">
-        <test-method signature="PostReqMeth()[pri:0, instance:RESTAssured.PostReq@c33b74f]" started-at="2023-06-05T01:11:52 IST" name="PostReqMeth" finished-at="2023-06-05T01:16:12 IST" duration-ms="259193" status="FAIL">
+        <test-method signature="PostReqMeth()[pri:0, instance:RESTAssured.PostReq@35ef1869]" started-at="2023-06-05T01:23:40 IST" name="PostReqMeth" finished-at="2023-06-05T01:23:45 IST" duration-ms="5261" status="FAIL">
           <exception class="java.lang.SecurityException">
             <message>
               <![CDATA[class "org.hamcrest.Matchers"'s signer information does not match signer information of other classes in the same package]]>

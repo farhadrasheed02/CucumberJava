@@ -11,6 +11,7 @@ public class PostReq {
 	@Test
 	public void PostReqMeth()
 	{
+		//sending request body as String ....
 		String pbody ="{\"id\":1,"
 				+ "email\":\"george.bluth@reqres.in\","
 				+ "\"first_name\":\"George\","
