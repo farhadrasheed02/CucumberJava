@@ -3,9 +3,6 @@ package StepDefinations;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
-
-import com.relevantcodes.extentreports.ExtentReports;
-
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -20,10 +17,9 @@ public class loginFeature {
 		try {
 			 stream = new PrintStream(file);
 			System.out.println("From now onwards"+file.getAbsolutePath()+"will be you console");
-		//	System.out.println("==============="+file.getAbsolutePath());
+		
 			System.setOut(stream);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	} 
