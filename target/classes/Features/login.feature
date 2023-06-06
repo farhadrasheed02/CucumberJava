@@ -1,5 +1,5 @@
 Feature: feature to test login functionality
-@Testing
+@TestingToday
   Scenario Outline: Check login is successful with valid creditionals
     Then report will be generated in file
     #Then Generate extents report
