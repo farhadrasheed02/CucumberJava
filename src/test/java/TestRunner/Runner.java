@@ -11,8 +11,10 @@ import io.cucumber.junit.CucumberOptions;
 		glue={"StepDefinations"},
 		tags="@TestingToday",
 		monochrome=true,
-				plugin= {"pretty","json:target/JSONReports/report.json"}  // for json report 
-      	//plugin= {"pretty","junit:target/JUnitReports/report.xml"} // for junit report 
+				plugin= {"pretty","json:target/JSONReports/reports.json"   // for json report 
+                          ,"junit:target/JUnitReports/report.xml",
+                          "html:target/HtmlReports/reports.html"
+                          } // for junit report 
 		)
 
 public class Runner {

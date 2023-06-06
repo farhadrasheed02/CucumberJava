@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.49" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="feature to test login functionality" name="Check login is successful with valid creditionals" time="0.053">
+<system-out><![CDATA[
+Then report will be generated in file.......................................passed
+Given user is on login page.................................................passed
+When user enters username and password......................................passed
+And clicks on login button..................................................passed
+Then user is navigated to the login page....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
