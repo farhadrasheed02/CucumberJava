@@ -1,10 +1,8 @@
 package TestRunner;
 import org.junit.runner.RunWith;
-import org.testng.annotations.Test;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-@Test
+
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features="src/main/resources/Features/login.feature",

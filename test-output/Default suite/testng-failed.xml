@@ -5,7 +5,7 @@
     <classes>
       <class name="RESTAssured.PostReq">
         <methods>
-          <include name="GeeksforGeek"/>
+          <include name="PostReqMeth"/>
         </methods>
       </class> <!-- RESTAssured.PostReq -->
     </classes>

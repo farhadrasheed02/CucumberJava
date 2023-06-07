@@ -36,11 +36,9 @@ public class PostReq {
 //				+ "\"last_name\":\"Bluth\","
 //				+ "\"avatar\":\"https://reqres.in/img/faces/1-image.jpg\"}";
 
-		RestAssured.baseURI="https://reqres.in/api/users";
-		RequestSpecification httpRequest = RestAssured.given(); 
-		Response response = httpRequest.get();
-		System.out.println("Status received => " + response.getStatusLine()); 
-		System.out.println("Response=>" + response.prettyPrint());
+		Response res =RestAssured.get("https://reqres.in/api/users");
+		System.out.println("Status received => " + res.getStatusLine()); 
+		System.out.println("Response=>" + res.prettyPrint());
 		 
 		
 	}
