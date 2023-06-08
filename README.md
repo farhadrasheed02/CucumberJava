@@ -1,8 +1,7 @@
 # CucumberJava
 
  I was getting error like this :
- The reason was I had Junit and TestNg both on the same path, so I removed JUNIt and kept only TestnG , so If you face such issue,
- keep in mind such things as well....
+ 
  java.lang.SecurityException: class "org.hamcrest.Matchers"'s signer information does not match signer information of other classes in the same package
 	at java.base/java.lang.ClassLoader.checkCerts(ClassLoader.java:1159)
 	at java.base/java.lang.ClassLoader.preDefineClass(ClassLoader.java:903)
@@ -43,3 +42,6 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+	The reason was I had Junit and TestNg both on the same path, so I removed JUNIt and kept only TestnG , so If you face such issue,
+ keep in mind such things as well....
