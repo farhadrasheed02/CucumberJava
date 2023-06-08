@@ -13,8 +13,7 @@ import org.testng.annotations.*;
 import static io.restassured.RestAssured.given;
 
 public class PostReq {
-	@Test
-	public void GeeksforGeek()
+/*	public void GeeksforGeek()
 	{
 		RestAssured
         .get("http://my-api.com/resource/123")
@@ -26,35 +25,43 @@ public class PostReq {
         .and()
         .body("id", equalTo(123));
 	}
+	*/
+	
+	
 	@Test
 	public void PostReqMeth()
 	{
 		//sending request body as String ....
-//		String pbody ="{\"id\":1,"
-//				+ "email\":\"george.bluth@reqres.in\","
-//				+ "\"first_name\":\"George\","
-//				+ "\"last_name\":\"Bluth\","
-//				+ "\"avatar\":\"https://reqres.in/img/faces/1-image.jpg\"}";
-
-		Response res =RestAssured.get("https://reqres.in/api/users");
-		System.out.println("Status received => " + res.getStatusLine()); 
-		System.out.println("Response=>" + res.prettyPrint());
+		String pbody ="{\"id\":50,"
+				+ "email\":\"swethana.v@reqres.in\","
+				+ "\"first_name\":\"swetha\","
+				+ "\"last_name\":\"v\","
+				+ "\"avatar\":\"https://reqres.in/img/faces/8-image.jpg\"}";
+		RestAssured.baseURI="https://reqres.in";
+		given().header("Content-Type","application/json").body(pbody)
+		.when().post("api/users")
+		.then()	.log().all().assertThat().statusCode(400).assertThat()
+		.body("email",equalTo("swethana.v@reqres.in"));
+//		Response res =RestAssured.get("https://reqres.in/api/users");
+//		System.out.println("Status received => " + res.getStatusLine()); 
+//		System.out.println("Response=>" + res.prettyPrint());
 		 
 		
 	}
+	@Test
 	public void getmethodPost()
 	{
-//		JSONObject jsObj = new JSONObject();
-//		jsObj.put("id","50");
-//		jsObj.put("email","swethana.v@reqres.in");
-//		jsObj.put("first_name", "swetha");
-//		jsObj.put("last_name","v");
-//		jsObj.put("avatar","https://reqres.in/img/faces/8-image.jpg");
-//		 given().header("Content-Type","application/json").body(jsObj.toJSONString()).
-//		 when().post("https://reqres.in/api/users").
-//		 then().log().all().assertThat()
-//		 //.statusCode(201).
-//		 .body("first_name",equalTo("swetha"));
+		JSONObject jsObj = new JSONObject();
+		jsObj.put("id","50");
+		jsObj.put("email","swethana.v@reqres.in");
+		jsObj.put("first_name", "swetha");
+		jsObj.put("last_name","v");
+		jsObj.put("avatar","https://reqres.in/img/faces/8-image.jpg");
+		 given().header("Content-Type","application/json").body(jsObj.toJSONString()).
+		 when().post("https://reqres.in/api/users").
+		 then().log().all().assertThat()
+		 .statusCode(201)
+		 .body("first_name",equalTo("swetha"));
 		
 		
 	}
