@@ -5,7 +5,7 @@
     <classes>
       <class name="rAghavPal.FirstTest">
         <methods>
-          <include name="Testing"/>
+          <include name="test2"/>
         </methods>
       </class> <!-- rAghavPal.FirstTest -->
     </classes>
