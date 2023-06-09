@@ -31,21 +31,18 @@ public class PostGet {
 		json.put("Religion", "Islam");
 		System.out.println(json.toJSONString());
 		
-		baseURI="https://reqres.in/api";
+		baseURI="https://reqres.in/";
 		given()
 			.header("Content-Type"," application/json")
 			.body(json.toJSONString())
 		.when()
-			.post("/users").
+			.post("api/users").
 		then()
-			.statusCode(201)
+			.statusCode(201)   // to create a request the status code should be 201....
 		.log().all();
 		
 	}
 	
-	public void put()
-	{
-		
-	}
+	
 
 }

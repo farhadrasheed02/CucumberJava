@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="rAghavPal.PostGet">
+      <class name="rAghavPal.PutPatchDeleteExample">
         <methods>
-          <include name="postreq"/>
+          <include name="Put"/>
         </methods>
-      </class> <!-- rAghavPal.PostGet -->
+      </class> <!-- rAghavPal.PutPatchDeleteExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
