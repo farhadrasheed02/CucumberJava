@@ -15,13 +15,14 @@ public class PostGet {
 		then().
 		statusCode(200).
 		log().all().
-		body("data[4].first_name",equalTo("George"));
+		body("data[4].first_name",equalTo("George"))
+		.body("data.first_name",hasItems("Byron", "George","Tobias"));  // only these elements should be present , sequence is not important...
 		
 	}
 	
 	public void postreq()
 	{
-		
+		JSONObject json = new JSONObject();  // use library gson, jackson to use json objects..
 	}
 
 }
