@@ -51,6 +51,7 @@ public class PostReq {
 	@Test
 	public void getmethodPost()
 	{
+		
 		JSONObject jsObj = new JSONObject();
 		jsObj.put("id","50");
 		jsObj.put("email","swethana.v@reqres.in");
