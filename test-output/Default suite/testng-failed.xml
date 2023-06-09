@@ -5,7 +5,7 @@
     <classes>
       <class name="rAghavPal.PostGet">
         <methods>
-          <include name="getreq"/>
+          <include name="postreq"/>
         </methods>
       </class> <!-- rAghavPal.PostGet -->
     </classes>
