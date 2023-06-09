@@ -38,7 +38,7 @@ public class PutPatchDeleteExample {
 		.when()
 			.patch("api/users/2")   // updating the values in the api...
 		.then()
-			.statusCode(200)  //   for put status code should be 200
+			.statusCode(200)  //   for put status code should be 200 ...
 		.log().all();
 	}
 	@Test
