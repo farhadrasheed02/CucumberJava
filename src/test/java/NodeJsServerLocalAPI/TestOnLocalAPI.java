@@ -12,7 +12,7 @@ public class TestOnLocalAPI {
 		baseURI="http://localhost:3000";
 		given().get("/data")
 		.then().statusCode(200)
-		.body("id", equalTo(8))
+		.body("[0].first_name", equalTo("Haseena"))
 		.log().all();
 		
 	}
