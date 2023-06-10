@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="rAghavPal.PutPatchDeleteExample">
+      <class name="NodeJsServerLocalAPI.TestOnLocalAPI">
         <methods>
-          <include name="Put"/>
+          <include name="Deletereq"/>
         </methods>
-      </class> <!-- rAghavPal.PutPatchDeleteExample -->
+      </class> <!-- NodeJsServerLocalAPI.TestOnLocalAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
