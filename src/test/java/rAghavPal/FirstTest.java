@@ -9,7 +9,6 @@ public class FirstTest {
 	@Test
 	public void Testing1()
 	{
-		
 		// we read the data from the API using get() --> request...GET: This Verb is used to get or read data from a server.
 		Response response=get("https://reqres.in/api/users?page=2");
 		System.out.println(response.getBody().asString());
