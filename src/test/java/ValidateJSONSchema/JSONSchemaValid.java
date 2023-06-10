@@ -16,7 +16,8 @@ public class JSONSchemaValid {
 		given().
 		get("api/users?page=2").
 		then().
-		assertThat().body(matchesJsonSchemaInClasspath("Schema.json"))  // can find the path of this schema.json (C:\Users\Farhad Rashid Reshi\eclipse-workspace\CucumberJava\target\classes)
+		assertThat().body(matchesJsonSchemaInClasspath("Schema.json")) // refer to https://youtu.be/rkGI32WXmPQ
+		// can find the path of this schema.json (C:\Users\Farhad Rashid Reshi\eclipse-workspace\CucumberJava\target\classes)
 		.statusCode(200)
 		.log().all().
 		body("data[4].first_name",equalTo("George"))
