@@ -5,7 +5,7 @@
     <classes>
       <class name="NodeJsServerLocalAPI.TestOnLocalAPI">
         <methods>
-          <include name="Deletereq"/>
+          <include name="getreq"/>
         </methods>
       </class> <!-- NodeJsServerLocalAPI.TestOnLocalAPI -->
     </classes>

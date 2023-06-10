@@ -1,6 +1,7 @@
 package NodeJsServerLocalAPI;
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.CoreMatchers.equalTo;
 
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
@@ -11,6 +12,7 @@ public class TestOnLocalAPI {
 		baseURI="http://localhost:3000";
 		given().get("/data")
 		.then().statusCode(200)
+		.body("id", equalTo(8))
 		.log().all();
 		
 	}
