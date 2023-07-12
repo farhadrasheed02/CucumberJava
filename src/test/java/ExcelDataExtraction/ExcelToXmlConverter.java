@@ -53,7 +53,7 @@ public class ExcelToXmlConverter {
 
             List<String> values = new ArrayList();
             for (Row row : sheet) {
-                Cell cell = row.getCell(columnNumber);
+                Cell cell = row.getCell(columnNumber);  // entering in the column number..
                 if (cell != null) {
                     String value = cell.getStringCellValue().trim();
                     if (!value.isEmpty()) {
