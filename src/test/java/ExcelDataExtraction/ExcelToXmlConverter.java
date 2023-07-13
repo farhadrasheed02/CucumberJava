@@ -51,7 +51,7 @@ public class ExcelToXmlConverter {
             Workbook workbook = new XSSFWorkbook(excelFile);
             Sheet sheet = workbook.getSheetAt(0); // Assuming the data is in the first sheet
 
-            List<String> values = new ArrayList();
+            List<String> values = new ArrayList<String>();
             for (Row row : sheet) {
                 Cell cell = row.getCell(columnNumber);  // entering in the column number..
                 if (cell != null) {
