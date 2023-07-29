@@ -7,4 +7,5 @@ Scenario Outline: Hook Feature Implementation
 	And enters credentials 
 	When authenticate the cred
 	Then lands on Home page
+#	Then report will be generated in file in hook
 	
